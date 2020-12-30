@@ -1,0 +1,133 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fondo-verde {
+    background: rgb(160, 195, 13);
+}
+
+
+/* ---------- MENU HEADER ---------- */
+
+.contenedor-menu {
+    height: 120px;
+}
+
+.imagen-menu {
+    min-width: 4rem;
+    max-width: 5rem;
+    min-height: 4rem;
+    max-height: 5rem;
+    margin-left: 20px;
+}
+
+.titulo-cliente {
+    text-align: center;
+    color: white;
+    font-family: 'Arial';
+    font-size: 2rem;
+}
+
+
+/* BOTON MENU */
+
+.boton-menu {
+    background: transparent;
+    border: none;
+    outline: none;
+    min-width: 4rem;
+    max-width: 5rem;
+    min-height: 3rem;
+    max-height: 4rem;
+}
+
+
+/* BOTON FILTROS */
+
+.boton-filtros {
+    background: rgb(69, 170, 226);
+    border: none;
+    border-radius: 30px;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2%;
+    outline: none;
+}
+
+.icono-filtros {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(90deg);
+    color: white;
+}
+
+
+/* ---------- MENU LATERAL ---------- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+}
+
+
+/* USUARIO DATOS */
+
+.imagen-menu-lateral {
+    min-width: 5rem;
+    max-width: 7rem;
+    min-height: 5rem;
+    max-height: 7rem;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.usuario-rol {
+    font-family: 'Arial';
+    font-weight: bold;
+    display: block;
+    padding-bottom: 2px;
+    padding-left: 3vh;
+}
+
+.usuario-correo {
+    font-family: 'Arial';
+    display: block;
+    padding-bottom: 2px;
+    padding-left: 3vh;
+}
+
+
+/* OPCIONES MENU */
+
+.ruta-opciones {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 3vh;
+    transition: 0.3s all linear;
+    display: block;
+}
+
+li:hover {
+    background: rgba(91, 168, 235);
+}
+
+.boton-cerrar-menu {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-end;
+}

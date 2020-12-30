@@ -1,0 +1,40 @@
+<div class="fondo-verde contenedor-menu">
+
+    <p class="titulo-cliente">{{ tituloCliente | uppercase }}</p>
+
+    <div class="flex-container">
+        <button class="boton-menu" (click)="abrirMenu()">
+            <img src="assets/imagenes/ValleHermoso/logo_VH_icono.png" class="imagen-menu">
+        </button>
+        <input>
+        <button class="boton-filtros" (click)="abrirFiltros()">
+            <i class="fa fa-sliders icono-filtros"></i>
+        </button>
+    </div>
+</div>
+
+<!-- MENU OPCIONES -->
+<div *ngIf="mostrarMenu == true" class="sidebar">
+
+    <!-- APARTADO USUARIO -->
+    <div class="fondo-verde">
+
+        <div class="flex-container">
+            <img src="assets/imagenes/ValleHermoso/logo_ValleHermoso.jpg" class="imagen-menu-lateral">
+            <button class="boton-cerrar-menu" (click)="cerrarMenu()">
+                <i class="fa fa-arrow-left"></i>
+            </button>
+        </div>
+
+        <span class="usuario-rol">{{usuario.rol}}</span>
+        <span class="usuario-correo">{{usuario.correo}}</span>
+
+    </div>
+
+    <div class="" *ngFor="let opcion of menuOpciones">
+        <a class="ruta-opciones" [routerLink]="opcion.ruta">
+            <li><i [class]="opcion.icono"></i> {{opcion.nombre}}</li>
+        </a>
+    </div>
+
+</div>
